@@ -39,6 +39,7 @@ body {
   transform: translateY(0);
 }
 
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -72,7 +73,7 @@ body {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
   position: relative;
   cursor: pointer;
 }
@@ -97,7 +98,6 @@ body {
 }
 
 /* Hero Section */
-
 .hero {
   min-height: 100vh;
   background: linear-gradient(
@@ -105,7 +105,6 @@ body {
     var(--gradient-start) 0%,
     var(--gradient-end) 100%
   );
-
   display: flex;
   align-items: center;
   padding: 0 5%;
@@ -134,7 +133,6 @@ body {
 
 .hero-badge {
   padding: 0.5rem 1rem;
- 
 }
 
 .glitch {
@@ -263,8 +261,7 @@ body {
   width: 100%;
 }
 
-/* Hero Media Queries */
-
+/* Tablet Media Queries */
 @media (max-width: 1024px) {
   .hero-container {
     flex-direction: column;
@@ -280,6 +277,80 @@ body {
 
   .cta-buttons {
     justify-content: center;
+  }
+}
+
+/* Smartphone Media Queries */
+@media (max-width: 600px) {
+  /* Navbar */
+  .navbar {
+    padding: 1rem 3%;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  /* Hero section */
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding-top: 100px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .glitch {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    min-width: 140px;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* Hero image */
+  .hero-image-container {
+    max-width: 90%;
+  }
+
+  /* Floating card */
+  .floating-card {
+    bottom: 1rem;
+    right: 0;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Social links */
+  .social-links a {
+    font-size: 1.2rem;
   }
 }
 
