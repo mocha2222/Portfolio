@@ -196,6 +196,101 @@ body {
   transform: translateY(-2px);
 }
 
+/* Responsive Design for Hero */
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 60px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .glitch {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 4rem 5%;
+  }
+
+  .hero-container {
+    padding-top: 40px;
+    gap: 1.5rem;
+  }
+
+  .glitch {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 4%;
+  }
+
+  .hero-container {
+    padding-top: 20px;
+  }
+
+  .glitch {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
 /* ========================= */
 /*       PROJECT SECTION     */
 /* ========================= */
