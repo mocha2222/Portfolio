@@ -100,8 +100,8 @@ export const Hero = () => {
   origin: "🌍 Phnom Penh, Cambodia ",
   role: "Web Developer",
   stack: {
-    languages: ["JavaScript", "HTML", "CSS", "C++", "C" "SQL"],
-    frameworks: ["React", "Next.js"],
+    languages: ["JavaScript", "HTML", "CSS", "Java", "SQL"],
+    frameworks: ["Vue.js", "Spring Boot"],
   },
   skills: {
     languages: ["English", "Khmer"],

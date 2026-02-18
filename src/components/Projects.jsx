@@ -32,6 +32,7 @@ export const Projects = () => {
       >
         My Projects
       </motion.h2>
+
       <motion.div
         className="project-grid"
         variants={staggerContainer}
@@ -39,39 +40,136 @@ export const Projects = () => {
         whileInView="animate"
         viewport={{ once: true }}
       >
-        <motion.div
+
+        <motion.a
+          href="https://stationery-store-ip.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
           className="project-card"
           variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          whileHover={{ y: -10 }}
+          style={{ textDecoration: "none", color: "inherit" }}
         >
           <motion.div
             className="project-image"
-            style={{ 
+            style={{
+              backgroundImage: "url('/E-commerce.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          />
+          <h3>Stationary Website (Group Project)</h3>
+          <p>
+            A responsive website designed to showcase stationary products
+            and provide basic product information.
+          </p>
+          <div className="project-tech">
+            <span>Vue JS</span>
+            <span>CSS & Bootstrap</span>
+            <span>Express</span>
+          </div>
+        </motion.a>
+
+        <motion.a
+          href="https://github.com/Malikaaaaaaaaaaa/Student-Internship-Management-System.git"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10 }}
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <motion.div
+            className="project-image"
+            style={{
+              backgroundImage: "url('/Internship.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          />
+          <h3>Internship Management System (Group Project)</h3>
+          <p>
+            A website designed to manage internship applications
+            and provide internship opportunity information.
+          </p>
+          <div className="project-tech">
+            <span>Thymeleaf</span>
+            <span>Spring Boot</span>
+          </div>
+        </motion.a>
+
+        <motion.a
+          href="https://github.com/mocha2222/Skincare-Shop.git"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10 }}
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <motion.div
+            className="project-image"
+            style={{
               backgroundImage: "url('/SkincareShop.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
-              backgroundColor: "rgba(0,0,0,0.1)",
-              backgroundBlendMode: "darken",
-            
             }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
           />
-          <h3>Skincare Website(Individual Project)</h3>
+          <h3>Skincare Website (Individual Project)</h3>
           <p>
-            A responsive website designed to showcase
-             skincare products and provide basic product information.
+            A responsive website designed to showcase skincare products
+            and provide basic product information.
           </p>
           <div className="project-tech">
             <span>HTML</span>
-            <span>CSS & Boostrap</span>
-            <span>Javascript</span>
+            <span>CSS & Bootstrap</span>
+            <span>JavaScript</span>
           </div>
-        </motion.div>
+        </motion.a>
 
-        <motion.div
+        <motion.a
+          href="https://github.com/mocha2222/automata-project.git"
+          target="_blank"
+          rel="noopener noreferrer"
           className="project-card"
           variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          whileHover={{ y: -10 }}
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <motion.div
+            className="project-image"
+            style={{
+              backgroundImage: "url('/Automata.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          />
+          <h3>Automata Project (Group Project)</h3>
+          <p>
+            A simple tool for calculating the DFA and NFA, convert NFA to DFA and Minimize DFA.
+          </p>
+          <div className="project-tech">
+            <span>Html & Css</span>
+            <span>JavaScript</span>
+          </div>
+        </motion.a>
+
+        <motion.a
+          href="https://github.com/yourusername/word-prediction-tool"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10 }}
+          style={{ textDecoration: "none", color: "inherit" }}
         >
           <motion.div
             className="project-image"
@@ -79,25 +177,28 @@ export const Projects = () => {
               backgroundImage: "url('/WordPrediction.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
-              backgroundColor: "rgba(0,0,0,0.1)",
-              backgroundBlendMode: "darken", 
             }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           />
           <h3>Word Prediction Tool in MATLAB (Group Project)</h3>
           <p>
-            A simple tool that predicts the next word based on bigram modeling.
+            A simple tool that predicts the next word
+            based on bigram modeling.
           </p>
           <div className="project-tech">
-            <span>Matlab</span>
+            <span>MATLAB</span>
           </div>
-        </motion.div>
+        </motion.a>
 
-        <motion.div
+        <motion.a
+          href="https://github.com/yourusername/weather-app"
+          target="_blank"
+          rel="noopener noreferrer"
           className="project-card"
           variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          whileHover={{ y: -10 }}
+          style={{ textDecoration: "none", color: "inherit" }}
         >
           <motion.div
             className="project-image"
@@ -105,24 +206,23 @@ export const Projects = () => {
               backgroundImage: "url('/WeatherApp.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
-              backgroundColor: "rgba(0,0,0,0.1)",
-              backgroundBlendMode: "darken", 
             }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           />
           <h3>Weather App</h3>
           <p>
-            A simple and user-friendly web application that provides real-time weather 
-            updates. It allows users to search for any city and instantly view details 
-            such as temperature, humidity, wind speed, and weather conditions.
+            A simple and user-friendly web application that provides
+            real-time weather updates including temperature, humidity,
+            wind speed, and conditions.
           </p>
           <div className="project-tech">
             <span>HTML</span>
             <span>CSS</span>
-            <span>Javascript</span>
+            <span>JavaScript</span>
           </div>
-        </motion.div>
+        </motion.a>
+
       </motion.div>
     </motion.section>
   );
